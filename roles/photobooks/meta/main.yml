@@ -1,0 +1,5 @@
+---
+dependencies:
+- { role: jdauphant.nginx }
+- { role: zenoamaro.rethinkdb }
+- { role: geerlingguy.nodejs }

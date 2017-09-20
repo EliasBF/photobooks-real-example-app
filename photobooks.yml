@@ -1,0 +1,21 @@
+---
+- hosts: photobooks*
+  pre_tasks:
+    - name: Update apt repository
+      apt: update_cache=yes
+  roles:
+    - photobooks
+  vars:
+    - projects:
+      - photobooks-db
+      - photobooks-client
+      - photobooks-api
+      - photobooks
+    - services:
+      - photobooks-api-photos
+      - photobooks-api-albums
+      - photobooks-api-comments
+      - photobooks-api-users
+      - photobooks-api-auth
+      - photobooks
+    - nodejs_version: "8.x"
