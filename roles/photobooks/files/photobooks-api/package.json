@@ -1,0 +1,42 @@
+{
+  "name": "photobooks-api",
+  "version": "1.0.0",
+  "description": "Photobooks REST API",
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && NODE_ENV=test ava --verbose test/**-test.js",
+    "photos": "micro -p 5000 photos.js",
+    "photos-dev": "micro-dev -p 5000 photos.js",
+    "albums": "micro -p 5001 albums.js",
+    "albums-dev": "micro-dev -p 5001 albums.js",
+    "comments": "micro -p 5002 comments.js",
+    "comments-dev": "micro-dev -p 5002 comments.js",
+    "users": "micro -p 5003 users.js",
+    "users-dev": "micro-dev -p 5003 users.js",
+    "auth": "micro -p 5004 auth.js",
+    "auth-dev": "micro-dev -p 5004 auth.js"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "author": "Elias Becerra <eliashbf@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-eslint": "^7.2.3",
+    "micro-dev": "^1.2.2",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "standard": "^10.0.3",
+    "test-listen": "^1.0.2"
+  },
+  "dependencies": {
+    "http-hash": "^2.0.0",
+    "jsonwebtoken": "^7.4.3",
+    "micro": "^8.0.3",
+    "photobooks-db": "file:../photobooks-db",
+    "qs": "^6.5.0",
+    "token-extractor": "^0.1.6",
+    "uuid-base62": "^0.1.0"
+  }
+}

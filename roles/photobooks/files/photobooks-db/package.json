@@ -1,0 +1,27 @@
+{
+  "name": "photobooks-db",
+  "version": "1.0.0",
+  "description": "Photobooks DB",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && ava --verbose"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "author": "Elias Becerra <eliashbf@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-eslint": "^7.2.3",
+    "faker": "^4.1.0",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "co": "^4.6.0",
+    "rethinkdb": "^2.3.3",
+    "uuid-base62": "^0.1.0"
+  }
+}

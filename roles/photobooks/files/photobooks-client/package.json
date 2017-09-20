@@ -1,0 +1,28 @@
+{
+  "name": "photobooks-client",
+  "version": "1.0.0",
+  "description": "Photobboks API Client",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && ava --verbose"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "author": "Elias Becerra <eliashbf@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-eslint": "^7.2.3",
+    "nock": "^9.0.14",
+    "standard": "^10.0.3",
+    "uuid-base62": "^0.1.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "photobooks-db": "file:../photobooks-db",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}

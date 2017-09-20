@@ -1,0 +1,4 @@
+- Añadir vistas (botones, links, etc) para modificar, borrar albumes y fotos
+- Añadir vista para modificar perfil del usuario
+- Añadir vistas (botones, links, etc) para seguir usuarios y albumes
+- Añadir vistas para guardar fotos
